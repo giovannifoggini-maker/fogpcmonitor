@@ -1,0 +1,5 @@
+Copyright (c) 2026 FogLabs
+
+Permission is hereby granted to use, copy, and modify this software for personal and internal use.
+Redistribution of modified versions should retain this notice and the attribution "FogMonitor by FogLabs".
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
