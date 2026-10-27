@@ -94,3 +94,9 @@ La build Windows non è stata eseguita da questo ambiente Linux; la workflow Git
 - `CHANGELOG.md` — cronologia versioni.
 
 **Distribuzione:** il pacchetto fornito in chat è il sorgente pronto per essere caricato su GitHub. Per pubblicare un EXE firmato, occorrono una build Windows e, facoltativamente, una firma Authenticode del distributore.
+
+## Cloudflare Pages (website)
+
+This repository includes a static public site under `public/` for Cloudflare Pages. In Cloudflare, select **Framework preset: None**, leave Root directory blank, use **Build command: `exit 0`** (or leave it blank for static HTML), and set **Build output directory: `public`**. No environment variables are required. See [`CLOUDFLARE-PAGES.md`](CLOUDFLARE-PAGES.md) and the on-site guide at `/CLOUDFLARE-PAGES.html`.
+
+Cloudflare Pages publishes the website and source archive only. The Windows desktop EXE is built separately on Windows or through GitHub Actions.

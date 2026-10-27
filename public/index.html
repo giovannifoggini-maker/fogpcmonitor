@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b100d">
+  <meta name="description" content="FogMonitor by FogLabs — lightweight Windows system monitor with Italian and English interface.">
+  <title>FogMonitor — by FogLabs</title>
+  <link rel="icon" type="image/png" href="/assets/fogmonitor-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#top" aria-label="FogMonitor home">
+      <img src="/assets/fogmonitor-icon.png" alt="" width="40" height="40">
+      <span>Fog<span class="mint">Monitor</span><small>by FogLabs</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features" data-i18n="navFeatures">Funzioni</a>
+      <a href="#download" data-i18n="navDownload">Download</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">WINDOWS SYSTEM MONITOR</span></div>
+        <h1 data-i18n-html="heroTitle">Il tuo PC.<br><span class="mint">Sotto controllo.</span></h1>
+        <p class="lead" data-i18n="heroLead">Un monitor di sistema pulito, leggero e bilingue. Dati essenziali, controlli immediati e animazioni discrete, senza account o telemetria.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="/downloads/FogMonitor-by-FogLabs-v1.7.0-IT-EN.zip" download><span data-i18n="sourceCta">Scarica il pacchetto sorgente</span><span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="#download" data-i18n="howTo">Come ottenere l'EXE</a>
+        </div>
+        <div class="meta-line"><span>Windows 10 / 11</span><i></i><span>Italiano / English</span><i></i><span data-i18n="localData">Dati locali</span></div>
+      </div>
+
+      <div class="dashboard-preview" aria-label="Decorative dashboard preview">
+        <div class="preview-top"><div class="preview-brand"><span class="mini-mark">F</span><span>FogMonitor <small>by FogLabs</small></span></div><span class="status-pill"><b></b><span data-i18n="previewLive">IN ESECUZIONE</span></span></div>
+        <div class="preview-label" data-i18n="previewTitle">Prestazioni del sistema</div>
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-title"><span>CPU</span><span class="tiny-icon">⌁</span></div><strong>24<span>%</span></strong><div class="spark spark-green"><i></i></div><small data-i18n="previewCpu">Utilizzo processore</small></article>
+          <article class="metric-card"><div class="metric-title"><span>RAM</span><span class="tiny-icon">▦</span></div><strong>61<span>%</span></strong><div class="meter"><i style="width:61%"></i></div><small data-i18n="previewMemory">Memoria in uso</small></article>
+          <article class="metric-card"><div class="metric-title"><span>GPU</span><span class="tiny-icon">◈</span></div><strong>18<span>%</span></strong><div class="spark spark-blue"><i></i></div><small data-i18n="previewGraphics">Motore grafico</small></article>
+          <article class="metric-card"><div class="metric-title"><span>DISK</span><span class="tiny-icon">◫</span></div><strong>42<span>%</span></strong><div class="meter meter-purple"><i style="width:42%"></i></div><small data-i18n="previewDisk">Unità di sistema</small></article>
+        </div>
+        <div class="preview-foot"><span><i class="tiny-live"></i><span data-i18n="previewLocal">Campionamento locale</span></span><span>v1.7.0</span></div>
+      </div>
+    </section>
+
+    <section class="feature-section" id="features">
+      <div class="section-heading"><div class="eyebrow" data-i18n="builtFor">PROGETTATO PER IL DESKTOP</div><h2 data-i18n="featuresTitle">Tutto ciò che serve.<br><span class="muted">Niente rumore.</span></h2></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon green-icon">⌁</div><h3>CPU &amp; RAM</h3><p data-i18n="featureCpu">Controlla utilizzo del processore, memoria disponibile e andamento recente.</p></article>
+        <article class="feature-card"><div class="feature-icon blue-icon">◈</div><h3 data-i18n="featureGpuTitle">GPU &amp; disco</h3><p data-i18n="featureGpu">Legge i contatori disponibili in Windows e indica chiaramente quando un dato non è supportato.</p></article>
+        <article class="feature-card"><div class="feature-icon purple-icon">▤</div><h3 data-i18n="featureProcessTitle">Processi chiari</h3><p data-i18n="featureProcess">Cerca e ordina i processi, copia i PID ed esporta la cronologia in CSV.</p></article>
+        <article class="feature-card"><div class="feature-icon mint-icon">◉</div><h3 data-i18n="featurePrivacyTitle">Privacy locale</h3><p data-i18n="featurePrivacy">Nessun account e nessuna telemetria: le letture vengono elaborate sul PC.</p></article>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-copy"><div class="eyebrow" data-i18n="getStarted">PER INIZIARE</div><h2 data-i18n="downloadTitle">Pronto per Windows.</h2><p data-i18n="downloadLead">Questa pagina è il portale statico di FogMonitor. Cloudflare Pages ospita il sito e il pacchetto sorgente; la compilazione dell'app desktop Windows viene eseguita separatamente.</p></div>
+      <div class="download-box"><div class="download-file"><div class="file-icon">ZIP</div><div><strong>FogMonitor v1.7.0</strong><small data-i18n="sourcePackage">Pacchetto sorgente · IT / EN</small></div></div><a class="button primary full" href="/downloads/FogMonitor-by-FogLabs-v1.7.0-IT-EN.zip" download><span data-i18n="downloadSource">Download sorgenti</span><span aria-hidden="true">↓</span></a><p class="fine-print" data-i18n="sourceNotice">Per ottenere FogMonitor.exe, esegui Build-EXE.bat su Windows oppure avvia la GitHub Action Windows release.</p></div>
+    </section>
+
+    <section class="build-note">
+      <div class="build-icon">↗</div><div><h3 data-i18n="buildTitle">Vuoi il file .exe?</h3><p data-i18n="buildText">Cloudflare Pages non compila né esegue applicazioni desktop Python. Usa la build Windows inclusa in GitHub Actions per creare lo ZIP portabile dell'app.</p></div><a href="/CLOUDFLARE-PAGES.html" class="text-link" data-i18n="deployGuide">Guida Cloudflare →</a>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><a class="footer-brand" href="#top">FogMonitor <span class="mint">/ FogLabs</span></a><span data-i18n="footerLine">Creato con cura per Windows · v1.7.0</span><a href="/CLOUDFLARE-PAGES.html" data-i18n="deploySettings">Impostazioni di pubblicazione</a></footer>
+</body>
+</html>
